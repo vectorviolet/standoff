@@ -78,3 +78,26 @@ jobs:
       - name: Run pytest
         working-directory: src/pygamine
         run: uv run --group dev pytest -q
+
+  # Boots the real game headlessly: config, Game(), and its actual run() --
+  # splash and main loop -- which the unit tests above never reach.
+  app-smoke-test:
+    name: App smoke test
+    runs-on: ubuntu-latest
+    env:
+      UV_PYTHON: "3.12"
+      SDL_VIDEODRIVER: dummy
+      SDL_AUDIODRIVER: dummy
+    steps:
+      - name: Checkout (with pygamine submodule)
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.2.0
+        with:
+          enable-cache: true
+
+      - name: Boot the game headlessly and run it briefly
+        run: uv run python scripts/smoke_test.py
