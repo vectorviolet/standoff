@@ -21,7 +21,7 @@ from util.constants import (
 from pygamine import Application
 from pygamine import AssetManager
 from pygamine import Debug
-from pygamine import SplashScreen
+from pygamine import SplashScreen, ImageMedia
 from pygamine import SaveStore
 from pygamine import GameAudio, SFX_CHANNEL
 
@@ -50,10 +50,9 @@ class Game(Application):
         if missing:
             raise FileNotFoundError("Missing assets:\n  " + "\n  ".join(missing))
 
-        self.splash = SplashScreen(
-            [self.assets.image_path("pygame_logo")],
-            fade_ms=SPLASH_FADE_MS, hold_ms=SPLASH_HOLD_MS,
-        )
+        self.splash = SplashScreen([
+            ImageMedia(self.assets.image_path("pygame_logo"), fade_ms=SPLASH_FADE_MS, hold_ms=SPLASH_HOLD_MS),
+        ])
 
         self._debug_text = ""
         self.debug_font = pygame.font.Font(None, 25)
