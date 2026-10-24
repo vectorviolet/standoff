@@ -1,6 +1,6 @@
 # Standoff
 
-![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/umutcanekinci/standoff/main/.github/badges/coverage.json)
+![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/vectorviolet/standoff/main/.github/badges/coverage.json)
 
 Standoff is a 2D networked multiplayer top-down shooter built with [pygame-ce](https://github.com/pygame-community/pygame-ce). Pick a character, host or join a room over the network (or play offline), then move, aim, and shoot your way through waves of zombies on a Tiled-authored map.
 
@@ -51,7 +51,7 @@ Clients launch the game, **Create Room** (host) or **Connect** by room ID (other
 
 [![Available on itch.io](https://jessemillar.github.io/available-on-itchio-badge/badge-color.png)](https://umutcanekinci.itch.io/standoff)
 
-Grab a ready-to-play desktop build for your OS from [itch.io](https://umutcanekinci.itch.io/standoff) or the [latest GitHub release](https://github.com/umutcanekinci/standoff/releases/latest) — no Python required. Unzip and run:
+Grab a ready-to-play desktop build for your OS from [itch.io](https://umutcanekinci.itch.io/standoff) or the [latest GitHub release](https://github.com/vectorviolet/standoff/releases/latest) — no Python required. Unzip and run:
 
 | OS | Run |
 |----|-----|
@@ -74,7 +74,7 @@ An Android debug APK is also built on every release — see [`.github/workflows/
 ## Running
 
 ```bash
-git clone --recurse-submodules https://github.com/umutcanekinci/standoff.git
+git clone --recurse-submodules https://github.com/vectorviolet/standoff.git
 cd standoff
 uv sync
 uv run python __main__.py
@@ -189,7 +189,7 @@ Character and tile art from [Kenney](https://www.kenney.nl/) — [Topdown Shoote
 
 Umutcan Ekinci — [umutcannekinci@gmail.com](mailto:umutcannekinci@gmail.com)
 
-See also the [contributors](https://github.com/umutcanekinci/standoff/contributors).
+See also the [contributors](https://github.com/vectorviolet/standoff/contributors).
 
 ## License
 

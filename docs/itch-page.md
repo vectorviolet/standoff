@@ -48,7 +48,7 @@ Tiled-authored map.
 
 **How to play**
 
-- **Desktop:** download the source from [GitHub](https://github.com/umutcanekinci/standoff) and run `uv sync` then `uv run python __main__.py`. One player runs `server.py` to host; others Connect by IP.
+- **Desktop:** download the source from [GitHub](https://github.com/vectorviolet/standoff) and run `uv sync` then `uv run python __main__.py`. One player runs `server.py` to host; others Connect by IP.
 - **Android:** download the APK below, enable "install from unknown sources," and install. Connect to a desktop host on your LAN.
 
 *Built with [pygame-ce](https://github.com/pygame-community/pygame-ce). Character and tile art from [Kenney](https://www.kenney.nl/assets/topdown-shooter).*
