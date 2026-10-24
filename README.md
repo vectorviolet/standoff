@@ -130,7 +130,7 @@ tools/                 Build helpers (build_android.sh)
 
 ## Architecture
 
-Standoff runs on the shared [`pygamine`](https://github.com/umutcanekinci/pygamine) engine: `Game` extends `pygamine.Application`, the menus are panel-driven (`config/panels.yaml` + `PanelManager`), and in-world entities are `GameObject`s with `SpriteRenderer2D` components.
+Standoff runs on the shared [`pygamine`](https://github.com/vectorviolet/pygamine) engine: `Game` extends `pygamine.Application`, the menus are panel-driven (`config/panels.yaml` + `PanelManager`), and in-world entities are `GameObject`s with `SpriteRenderer2D` components.
 
 - **Scenes.** `Game` is a thin shell that holds the *active scene* and forwards `handle_event`/`update`/`draw` to it. `LobbyScene` owns all menu/panel state and the pre-game flow; `GameplayScene` owns the in-world phase. Switching phases swaps the active scene instead of branching on flags — a pause screen or game-over screen is a new `Scene` subclass, not another `if`.
 - **The World.** `GameplayScene` *is* the world that entities depend on: `Player`, `Mob`, `Bullet`, `MuzzleFlash`, `Map` and `Obstacle` read their surroundings (walls, players, mobs, `delta_time`, camera, the mob grid, …) off that narrow surface rather than reaching into the whole `Game`.
