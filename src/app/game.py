@@ -14,14 +14,12 @@ from util.constants import (
     FPS,
     CLIENT_ADDR,
     SERVER_PORT,
-    SPLASH_FADE_MS,
-    SPLASH_HOLD_MS,
     Mode,
 )
 from pygamine import Application
 from pygamine import AssetManager
 from pygamine import Debug
-from pygamine import SplashScreen, ImageMedia
+from pygamine import SplashScreen, standard_splash_media
 from pygamine import SaveStore
 from pygamine import GameAudio, SFX_CHANNEL
 
@@ -50,10 +48,6 @@ class Game(Application):
         if missing:
             raise FileNotFoundError("Missing assets:\n  " + "\n  ".join(missing))
 
-        self.splash = SplashScreen([
-            ImageMedia(self.assets.image_path("pygame_logo"), fade_ms=SPLASH_FADE_MS, hold_ms=SPLASH_HOLD_MS),
-        ])
-
         self._debug_text = ""
         self.debug_font = pygame.font.Font(None, 25)
 
@@ -70,6 +64,10 @@ class Game(Application):
         self.audio = GameAudio()
         self.audio.set_music_volume(self._saved_settings.get("music_volume", 1.0))
         self.audio.set_sfx_volume(self._saved_settings.get("sfx_volume", 1.0))
+
+        # After the audio setup, so the publisher clip plays at the saved
+        # music volume.
+        self.splash = SplashScreen(standard_splash_media(self.audio), skip_completely=True)
 
         # UI sound effects, loaded once (the mixer is up via Application). Each
         # load is guarded so a missing/disabled audio device degrades to silence

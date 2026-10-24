@@ -50,10 +50,6 @@ RENDER_SCALE = 2 / 3 if _TOUCH else 1.0
 
 BACKGROUND_COLORS = {"menu": CustomBlue}
 
-# Startup splash (pygamine.SplashScreen): fade-in then hold, per image
-SPLASH_FADE_MS = 1500
-SPLASH_HOLD_MS = 1000
-
 # Game
 DEVELOP_MODE = False
 FPS = 60
