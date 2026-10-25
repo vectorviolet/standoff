@@ -1,0 +1,258 @@
+# Where every file under assets/ comes from -- see README.md ("Asset sources").
+# tests/test_sources.py keeps this complete, and scripts/gen_credits.py builds
+# CREDITS.md's asset section from it. A pack's license text is in
+# licenses/assets/<pack>.txt.
+#
+# source: a pack slug from `packs`, "own" (made for this game), or "unknown"
+#         (origin not yet confirmed; then `todo` says what to do).
+# original: the file's path inside that pack. modified: what was changed.
+
+packs:
+  kenney-mobile-controls:
+    name: "Mobile Controls"
+    author: "Kenney"
+    url: https://kenney.nl/assets/mobile-controls
+    license: CC0-1.0
+    used_for: "touch controls"
+  kenney-particle-pack:
+    name: "Particle Pack"
+    author: "Kenney"
+    url: https://kenney.nl/assets/particle-pack
+    license: CC0-1.0
+    used_for: "muzzle flashes"
+  kenney-top-down-shooter:
+    name: "Top-Down Shooter"
+    author: "Kenney"
+    url: https://kenney.nl/assets/top-down-shooter
+    license: CC0-1.0
+    used_for: "characters, weapons, map tiles"
+  kenney-ui-pack:
+    name: "UI Pack"
+    author: "Kenney"
+    url: https://kenney.nl/assets/ui-pack
+    license: CC0-1.0
+    used_for: "button sounds"
+
+files:
+  "images/characters/hitman/gun.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Hitman 1/hitman1_gun.png"
+  "images/characters/hitman/hitman1_machine.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Hitman 1/hitman1_machine.png"
+  "images/characters/hitman/hitman1_reload.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Hitman 1/hitman1_reload.png"
+  "images/characters/hitman/hitman1_silencer.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Hitman 1/hitman1_silencer.png"
+  "images/characters/hitman/hitman1_stand.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Hitman 1/hitman1_stand.png"
+  "images/characters/hitman/idle.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Hitman 1/hitman1_stand.png"
+  "images/characters/man_blue/gun.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Blue/manBlue_gun.png"
+  "images/characters/man_blue/idle.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Blue/manBlue_stand.png"
+  "images/characters/man_blue/manBlue_hold.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Blue/manBlue_hold.png"
+  "images/characters/man_blue/manBlue_machine.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Blue/manBlue_machine.png"
+  "images/characters/man_blue/manBlue_reload.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Blue/manBlue_reload.png"
+  "images/characters/man_blue/manBlue_silencer.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Blue/manBlue_silencer.png"
+  "images/characters/man_brown/gun.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Brown/manBrown_gun.png"
+  "images/characters/man_brown/idle.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Brown/manBrown_stand.png"
+  "images/characters/man_brown/manBrown_hold.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Brown/manBrown_hold.png"
+  "images/characters/man_brown/manBrown_machine.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Brown/manBrown_machine.png"
+  "images/characters/man_brown/manBrown_reload.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Brown/manBrown_reload.png"
+  "images/characters/man_brown/manBrown_silencer.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Brown/manBrown_silencer.png"
+  "images/characters/man_old/gun.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Old/manOld_gun.png"
+  "images/characters/man_old/idle.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Old/manOld_stand.png"
+  "images/characters/man_old/manOld_hold.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Old/manOld_hold.png"
+  "images/characters/man_old/manOld_machine.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Old/manOld_machine.png"
+  "images/characters/man_old/manOld_reload.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Old/manOld_reload.png"
+  "images/characters/man_old/manOld_silencer.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Man Old/manOld_silencer.png"
+  "images/characters/robot/gun.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Robot 1/robot1_gun.png"
+  "images/characters/robot/idle.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Robot 1/robot1_stand.png"
+  "images/characters/robot/robot1_hold.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Robot 1/robot1_hold.png"
+  "images/characters/robot/robot1_machine.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Robot 1/robot1_machine.png"
+  "images/characters/robot/robot1_reload.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Robot 1/robot1_reload.png"
+  "images/characters/robot/robot1_silencer.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Robot 1/robot1_silencer.png"
+  "images/characters/solider/gun.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Soldier 1/soldier1_gun.png"
+  "images/characters/solider/idle.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Soldier 1/soldier1_stand.png"
+  "images/characters/solider/soldier1_hold.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Soldier 1/soldier1_hold.png"
+  "images/characters/solider/soldier1_machine.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Soldier 1/soldier1_machine.png"
+  "images/characters/solider/soldier1_reload.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Soldier 1/soldier1_reload.png"
+  "images/characters/solider/soldier1_silencer.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Soldier 1/soldier1_silencer.png"
+  "images/characters/survivor/gun.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Survivor 1/survivor1_gun.png"
+  "images/characters/survivor/idle.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Survivor 1/survivor1_stand.png"
+  "images/characters/survivor/survivor1_hold.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Survivor 1/survivor1_hold.png"
+  "images/characters/survivor/survivor1_machine.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Survivor 1/survivor1_machine.png"
+  "images/characters/survivor/survivor1_reload.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Survivor 1/survivor1_reload.png"
+  "images/characters/survivor/survivor1_silencer.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Survivor 1/survivor1_silencer.png"
+  "images/characters/woman_green/gun.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Woman Green/womanGreen_gun.png"
+  "images/characters/woman_green/idle.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Woman Green/womanGreen_stand.png"
+  "images/characters/woman_green/womanGreen_hold.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Woman Green/womanGreen_hold.png"
+  "images/characters/woman_green/womanGreen_machine.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Woman Green/womanGreen_machine.png"
+  "images/characters/woman_green/womanGreen_reload.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Woman Green/womanGreen_reload.png"
+  "images/characters/woman_green/womanGreen_silencer.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Woman Green/womanGreen_silencer.png"
+  "images/characters/zombie/gun.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Zombie 1/zoimbie1_gun.png"
+  "images/characters/zombie/idle.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Zombie 1/zoimbie1_stand.png"
+  "images/characters/zombie/zoimbie1_hold.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Zombie 1/zoimbie1_hold.png"
+  "images/characters/zombie/zoimbie1_machine.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Zombie 1/zoimbie1_machine.png"
+  "images/characters/zombie/zoimbie1_reload.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Zombie 1/zoimbie1_reload.png"
+  "images/characters/zombie/zoimbie1_silencer.png":
+    source: kenney-top-down-shooter
+    original: "PNG/Zombie 1/zoimbie1_silencer.png"
+  "images/effects/muzzle_flashes/muzzle_01.png":
+    source: kenney-particle-pack
+    original: "PNG (Transparent)/Rotated/muzzle_01_rotated.png"
+  "images/effects/muzzle_flashes/muzzle_02.png":
+    source: kenney-particle-pack
+    original: "PNG (Transparent)/Rotated/muzzle_02_rotated.png"
+  "images/effects/muzzle_flashes/muzzle_03.png":
+    source: kenney-particle-pack
+    original: "PNG (Transparent)/Rotated/muzzle_03_rotated.png"
+  "images/effects/muzzle_flashes/muzzle_04.png":
+    source: kenney-particle-pack
+    original: "PNG (Transparent)/Rotated/muzzle_04_rotated.png"
+  "images/effects/muzzle_flashes/muzzle_05.png":
+    source: kenney-particle-pack
+    original: "PNG (Transparent)/Rotated/muzzle_05_rotated.png"
+  "images/mobile_controls/fire_button.png":
+    source: kenney-mobile-controls
+    original: "Sprites/Style A/Default/joystick_circle_nub_a.png"
+    modified: "sliced from the pack's spritesheet atlas; pixel-identical apart from re-encoding"
+  "images/mobile_controls/joystick_base.png":
+    source: kenney-mobile-controls
+    original: "Sprites/Style A/Default/joystick_circle_pad_d.png"
+    modified: "sliced from the pack's spritesheet atlas; pixel-identical apart from re-encoding"
+  "images/mobile_controls/joystick_knob.png":
+    source: kenney-mobile-controls
+    original: "Sprites/Style A/Default/joystick_circle_nub_c.png"
+    modified: "sliced from the pack's spritesheet atlas; pixel-identical apart from re-encoding"
+  "images/spritesheets/spritesheet_characters.png":
+    source: kenney-top-down-shooter
+    original: "Spritesheet/spritesheet_characters.png"
+  "images/spritesheets/spritesheet_tiles.png":
+    source: kenney-top-down-shooter
+    original: "Spritesheet/spritesheet_tiles.png"
+  "images/weapons/weapon_gun.png":
+    source: kenney-top-down-shooter
+    original: "PNG/weapon_gun.png"
+  "images/weapons/weapon_machine.png":
+    source: kenney-top-down-shooter
+    original: "PNG/weapon_machine.png"
+  "images/weapons/weapon_silencer.png":
+    source: kenney-top-down-shooter
+    original: "PNG/weapon_silencer.png"
+  "maps/level1.tmx":
+    source: own
+    note: "Tiled map made for this game (uses the Top-Down Shooter tiles)"
+  "maps/level2.tmx":
+    source: own
+    note: "Tiled map made for this game (uses the Top-Down Shooter tiles)"
+  "maps/tileset.tsx":
+    source: own
+    note: "Tiled map made for this game (uses the Top-Down Shooter tiles)"
+  "sounds/click-a.ogg":
+    source: kenney-ui-pack
+    original: "Sounds/click-a.ogg"
+  "sounds/switch-a.ogg":
+    source: kenney-ui-pack
+    original: "Sounds/switch-a.ogg"
+  "sounds/switch-b.ogg":
+    source: kenney-ui-pack
+    original: "Sounds/switch-b.ogg"
