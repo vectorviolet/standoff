@@ -78,6 +78,7 @@ jobs:
           name: standoff-debug-apk
           path: ${{ steps.apk.outputs.path }}
           if-no-files-found: error
+          retention-days: 7  # tag runs attach the APK to the GitHub Release; a manual test run's APK lasts 7 days
 
   # Mirrors release.yml's publish-itch job (windows/linux/osx channels) for the
   # `android` channel — see docs/itch-page.md, which previously described this
